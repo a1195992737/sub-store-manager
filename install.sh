@@ -3,16 +3,16 @@
 # Sub-Store 管理面板 · 一键安装脚本
 #
 # 用法（任选其一）:
-#   curl -fsSL https://cdn.jsdelivr.net/gh/YOURNAME/sub-store-manager@main/install.sh | sudo bash
-#   curl -fsSL https://raw.githubusercontent.com/YOURNAME/sub-store-manager/main/install.sh | sudo bash
+#   curl -fsSL https://cdn.jsdelivr.net/gh/a1195992737/sub-store-manager@main/install.sh | sudo bash
+#   curl -fsSL https://raw.githubusercontent.com/a1195992737/sub-store-manager/main/install.sh | sudo bash
 #
 # 安装后即可使用命令: substore
 # ============================================================
 set -uo pipefail
 
 # 下载源（按顺序尝试）：国内优先 jsDelivr，其次 GitHub raw
-RAW_BASE="${SUBSTORE_RAW_BASE:-https://cdn.jsdelivr.net/gh/YOURNAME/sub-store-manager@main}"
-RAW_FALLBACK="${SUBSTORE_RAW_FALLBACK:-https://raw.githubusercontent.com/YOURNAME/sub-store-manager/main}"
+RAW_BASE="${SUBSTORE_RAW_BASE:-https://cdn.jsdelivr.net/gh/a1195992737/sub-store-manager@main}"
+RAW_FALLBACK="${SUBSTORE_RAW_FALLBACK:-https://raw.githubusercontent.com/a1195992737/sub-store-manager/main}"
 TARGET="/usr/local/bin/substore"
 
 C_G=$'\033[1;32m'; C_R=$'\033[1;31m'; C_Y=$'\033[1;33m'

@@ -20,8 +20,8 @@ IMAGE="${SUBSTORE_IMAGE:-xream/sub-store:latest}"
 SELF_TARGET="/usr/local/bin/substore"
 COMPOSE="$DIR/docker-compose.yml"
 # 远程安装/管道运行时用于下载脚本本体；install.sh 会把它改写成实际可用的地址
-DEFAULT_RAW_BASE="https://cdn.jsdelivr.net/gh/YOURNAME/sub-store-manager@main"
-DEFAULT_RAW_FALLBACK="https://raw.githubusercontent.com/YOURNAME/sub-store-manager/main"
+DEFAULT_RAW_BASE="https://cdn.jsdelivr.net/gh/a1195992737/sub-store-manager@main"
+DEFAULT_RAW_FALLBACK="https://raw.githubusercontent.com/a1195992737/sub-store-manager/main"
 
 C_G=$'\033[1;32m'; C_R=$'\033[1;31m'; C_Y=$'\033[1;33m'
 C_B=$'\033[1;36m'; C_D=$'\033[2m'; C_N=$'\033[0m'
